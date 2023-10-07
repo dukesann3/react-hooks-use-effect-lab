@@ -10,8 +10,10 @@ function App() {
 
   function handleQuestionAnswered(correct) {
     if (currentQuestionId < questions.length) {
+      console.log(currentQuestion);
       setCurrentQuestion((currentQuestionId) => currentQuestionId + 1);
     } else {
+      console.log(currentQuestion);
       setCurrentQuestion(null);
     }
     if (correct) {
